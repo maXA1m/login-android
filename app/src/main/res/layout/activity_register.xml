@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@color/colorAccent"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    tools:context=".LoginActivity">
+    tools:context=".RegisterActivity">
 
     <!-- Login progress -->
     <ProgressBar
@@ -29,6 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
 
             <android.support.v7.widget.AppCompatImageView
                 android:id="@+id/logo"
@@ -52,9 +53,65 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="24dp"
-                    android:text="@string/login"
+                    android:text="@string/register"
                     android:textColor="#fff"
                     android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/fname"
+                    android:textColor="#fff"
+                    android:textSize="12sp" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/fname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/fname_hint"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="#fff"
+                    android:textColorHint="#ddd"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@color/transparent_gray" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/lname"
+                    android:textColor="#fff"
+                    android:textSize="12sp" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/lname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/lname_hint"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="#fff"
+                    android:textColorHint="#ddd"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@color/transparent_gray" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -131,15 +188,6 @@
                     android:layout_marginTop="4dp"
                     android:background="@color/transparent_gray" />
 
-                <TextView
-                    android:id="@+id/forgot_password"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="end"
-                    android:layout_marginTop="4dp"
-                    android:text="@string/forgot_password"
-                    android:textColor="#fff" />
-
                 <android.support.v7.widget.AppCompatButton
                     android:id="@+id/email_sign_in_button"
                     android:layout_width="wrap_content"
@@ -150,51 +198,13 @@
                     android:paddingLeft="40dp"
                     android:paddingRight="40dp"
                     android:paddingTop="0dp"
-                    android:text="@string/action_sign_in"
+                    android:text="@string/create_account"
                     android:textColor="#fff"
                     android:textSize="15sp" />
 
             </LinearLayout>
 
         </LinearLayout>
-
-
-
-
-        <View
-            android:id="@+id/bg"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_above="@+id/terms"
-            android:layout_below="@id/email_login_form"
-            android:background="@drawable/bg1" />
-
-        <android.support.design.widget.FloatingActionButton
-            android:id="@+id/add"
-            android:layout_width="84dp"
-            android:layout_height="84dp"
-            android:layout_above="@+id/terms"
-            android:scaleType="fitXY"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="16dp"
-            android:onClick="onShowRegisterClick"
-            android:clickable="true"
-            app:srcCompat="@drawable/ic_add_white_24dp" />
-
-        <TextView
-            android:id="@+id/terms"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:background="@color/white"
-            android:paddingBottom="24dp"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:paddingTop="16dp"
-            android:text="@string/terms_condition"
-            android:textColor="@color/gray" />
-
-
 
     </RelativeLayout>
 </FrameLayout>
