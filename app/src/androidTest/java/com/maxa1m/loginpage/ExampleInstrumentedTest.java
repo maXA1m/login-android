@@ -1,4 +1,4 @@
-package com.example.resaik.myloginapplication;
+package com.maxa1m.loginpage;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
